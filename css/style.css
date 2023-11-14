@@ -1,0 +1,231 @@
+:root {
+  --background: #7b002c;
+  --logo-color: #f5ffb8;
+  --button-blue-iris: #4d5ae5;
+  --title-color: #ffffff;
+  --modal-color: #38002c;
+  --base-white: #ffffff;
+  --background-modal: rgba(12, 0, 11, 0.22);
+  --transition-duration-250: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+}
+.container {
+  width: 320px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.logo {
+  padding: 325px 0px;
+}
+.logo-text {
+  color: #f5ffb8;
+  font-family: Michroma;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.552%;
+  text-align: center;
+}
+
+.bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    to right top,
+    #7b002c,
+    #621036,
+    #621036,
+    #d1b9b9,
+    #621036,
+    #6b123c,
+    #7b002c
+  );
+  -webkit-animation: AnimateBG 1.6s ease infinite;
+  animation: AnimateBG 1.6s ease infinite;
+  transition: transform ease 0.5s;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 250% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.none {
+  transform: translateX(-100%);
+}
+.circle {
+  height: 100vh;
+  background: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+}
+.container-circle {
+  width: 350px;
+  /* height: 100%; */
+  display: block;
+  margin: 0 auto;
+  background-color: var(--background-modal);
+}
+
+.circle-title {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140.552%;
+  padding-top: 31px;
+  margin-bottom: 52px;
+}
+.circle-img-wrapper {
+  position: relative;
+  margin-bottom: 51px;
+}
+.circle-img {
+  display: block;
+  margin: 0 auto;
+  transition: transform ease 5s;
+}
+.circle-img-arrow {
+  position: absolute;
+  top: 130px;
+  right: -10px;
+}
+.btn-5 {
+  display: block;
+  margin: 0 auto;
+  width: 210px;
+  height: 59px;
+  border-radius: 50px;
+  background: #fff;
+  color: #a00000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140.552%;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  margin-bottom: 23px;
+}
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 30px;
+  text-shadow: 1px 1px 2px #427388;
+}
+.rotating {
+  transform: rotate(2430deg); /* Виконуємо обертання на 360 градусів */
+}
+.hidden {
+  display: none;
+}
+.modal {
+  background-color: #fff;
+  width: 314px;
+  display: block;
+  margin: 138px auto;
+  opacity: 0;
+  transition: opacity ease 1s;
+  padding: 61px 15px 51px 15px;
+}
+.modal-title {
+  color: #38002c;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140.552%;
+  margin-bottom: 51px;
+}
+.modal-img-wrapper {
+  position: relative;
+}
+.modal-img {
+  margin-bottom: 50px;
+}
+.modal-text {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140.552%;
+}
+.modal-gift {
+  position: absolute;
+  top: 25%;
+  left: 6%;
+  color: #000;
+  width: 250px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140.552%;
+}
