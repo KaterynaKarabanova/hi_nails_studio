@@ -12,6 +12,7 @@ function onDanceBtnClick() {
 }
 
 function rotateCircle() {
+  refs.rotateBtn.setAttribute("disabled", "");
   refs.circle.classList.add("rotating");
   setTimeout(() => {
     getSong();
