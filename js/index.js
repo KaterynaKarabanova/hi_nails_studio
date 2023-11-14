@@ -19,7 +19,6 @@ function onDanceBtnClick() {
 }
 
 function rotateCircle() {
-  // Adding a CSS class to trigger the rotation
   circle.classList.add("rotating");
   setTimeout(() => {
     getSong();
