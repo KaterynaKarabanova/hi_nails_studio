@@ -96,6 +96,7 @@ body {
   background-size: cover;
   padding-top: 20px;
 }
+
 .container-circle {
   width: 350px;
   display: block;
@@ -110,6 +111,7 @@ body {
   font-weight: 300;
   padding-top: 31px;
   margin-bottom: 52px;
+  line-height: 140%;
 }
 .circle-img-wrapper {
   position: relative;
@@ -158,6 +160,7 @@ body {
 }
 .hidden {
   display: none;
+  position: fixed;
 }
 
 /* Modal Section  */
@@ -199,6 +202,7 @@ body {
   text-align: center;
   font-size: 54px;
   font-weight: 500;
+  line-height: 140%;
 }
 
 @-webkit-keyframes AnimateBG {
