@@ -32,6 +32,9 @@ img {
 }
 
 body {
+  font-family: Roboto;
+  font-style: normal;
+  line-height: 140.5%;
 }
 .container {
   width: 320px;
@@ -39,14 +42,16 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+/* Logo Section  */
+
 .logo {
   padding: 325px 0px;
 }
 .logo-text {
-  color: #f5ffb8;
+  color: var(--title-color);
   font-family: Michroma;
   font-size: 44px;
-  font-style: normal;
   font-weight: 400;
   line-height: 140.552%;
   text-align: center;
@@ -78,56 +83,31 @@ body {
   transition: transform ease 0.5s;
 }
 
-@-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 200% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 250% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .none {
   transform: translateX(-100%);
 }
+
+/* Circle Section  */
+
 .circle {
   height: 100vh;
-  background: url(/images/background.jpg);
+  background: url(./images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 20px;
 }
 .container-circle {
   width: 350px;
-  /* height: 100%; */
   display: block;
   margin: 0 auto;
   background-color: var(--background-modal);
 }
 
 .circle-title {
-  color: #fff;
+  color: var(--title-color);
   text-align: center;
-  font-family: Roboto;
   font-size: 28px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 140.552%;
   padding-top: 31px;
   margin-bottom: 52px;
 }
@@ -151,14 +131,11 @@ body {
   width: 210px;
   height: 59px;
   border-radius: 50px;
-  background: #fff;
+  background: var(--title-color);
   color: #a00000;
   text-align: center;
-  font-family: Roboto;
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 140.552%;
   border: 0 solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
@@ -177,13 +154,16 @@ body {
   text-shadow: 1px 1px 2px #427388;
 }
 .rotating {
-  transform: rotate(2430deg); /* Виконуємо обертання на 360 градусів */
+  transform: rotate(2430deg);
 }
 .hidden {
   display: none;
 }
+
+/* Modal Section  */
+
 .modal {
-  background-color: #fff;
+  background-color: var(--title-color);
   width: 314px;
   display: block;
   margin: 138px auto;
@@ -194,11 +174,8 @@ body {
 .modal-title {
   color: #38002c;
   text-align: center;
-  font-family: Roboto;
   font-size: 28px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 140.552%;
   margin-bottom: 51px;
 }
 .modal-img-wrapper {
@@ -210,11 +187,8 @@ body {
 .modal-text {
   color: #000;
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 140.552%;
 }
 .modal-gift {
   position: absolute;
@@ -223,9 +197,30 @@ body {
   color: #000;
   width: 250px;
   text-align: center;
-  font-family: Roboto;
   font-size: 54px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 140.552%;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 250% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
