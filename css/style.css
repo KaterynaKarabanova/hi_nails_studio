@@ -80,7 +80,7 @@ body {
   );
   -webkit-animation: AnimateBG 1.6s ease infinite;
   animation: AnimateBG 1.6s ease infinite;
-  transition: transform ease 0.5s;
+  transition: transform ease-in 0.26s;
 }
 
 .none {
@@ -173,6 +173,7 @@ body {
   opacity: 0;
   transition: opacity ease 1s;
   padding: 61px 15px 51px 15px;
+  border-radius: 4px;
 }
 .modal-title {
   color: #38002c;
@@ -196,9 +197,10 @@ body {
 .modal-gift {
   position: absolute;
   top: 25%;
-  left: 6%;
+  left: 9%;
   color: #000;
-  width: 250px;
+  width: 230px;
+
   text-align: center;
   font-size: 54px;
   font-weight: 500;
